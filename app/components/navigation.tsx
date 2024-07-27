@@ -7,15 +7,16 @@ export default function Navigation() {
   const path = usePathname();
   return (
     <nav>
-      <ul>
+        <ul>
         <li>
-          <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
+            <Link href="/">Home</Link>
+            {path === "/" ? " ✅" : ""}
         </li>
         <li>
-          <Link href="/about">About Us</Link>
-          {path === "/about" ? "🔥" : ""}
+            <Link href="/about">About Us</Link>
+            {path === "/about" ? " ✅" : ""}
         </li>
-      </ul>
+        </ul>
     </nav>
   );
 }
