@@ -4,3 +4,6 @@
 <p>"rules": {
 <p>    "react/no-unescaped-entities": 0 
 <p> },
+
+## img key prop eslint error
+<p>key props add
