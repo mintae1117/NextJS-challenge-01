@@ -32,8 +32,8 @@ export default async function page ({params: {id}}: {params: {id: string}}){
                 <div style={{paddingTop:10, paddingRight:30, paddingLeft:30, paddingBottom:30, backgroundColor: "gray", width:"auto", maxWidth:"400px", marginBottom:30}}>
                     <h3>Title : {e.title}</h3>
                     <p>Author : {e.author}</p>
-                    <img key={e.primary_isbn10} style={{width:300}} src={e.book_image}/>
-                    <br></br>
+                    <img alt={e.primary_isbn10} style={{width:300}} src={e.book_image}/>
+                    <br/>
                     <Link href={e.amazon_product_url}>Buy now link</Link>
                 </div>
             </div>)}
