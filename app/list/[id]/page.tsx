@@ -30,7 +30,7 @@ export default async function page ({params: {id}}: {params: {id: string}}){
             <h2>{id}</h2>
             {books.results.books.map((e) => 
             <div key={e.primary_isbn10} style={{display:"flex"}}>
-                <div style={{paddingTop:10, paddingRight:30, paddingLeft:30, paddingBottom:30, backgroundColor: "gray", width:"auto", maxWidth:"400px", marginBottom:30}}>
+                <div style={{paddingTop:10, paddingRight:30, paddingLeft:30, paddingBottom:30, backgroundColor: "#d2d2d2", width:"auto", marginBottom:30}}>
                     <h3>Title : {e.title}</h3>
                     <p>Author : {e.author}</p>
                     <img
