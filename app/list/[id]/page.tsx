@@ -1,4 +1,4 @@
-import { API_URL } from "@/app/page";
+import { API_URL } from "@/app/config/api";
 import Link from "next/link";
 
 

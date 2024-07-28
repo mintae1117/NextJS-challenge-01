@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-export const API_URL = "https://books-api.nomadcoders.workers.dev";
+import { API_URL } from "./config/api";
 
 interface IBestSellersProps {
   display_name: string;
