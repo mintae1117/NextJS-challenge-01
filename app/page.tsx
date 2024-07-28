@@ -22,7 +22,7 @@ export default async function Page() {
     <div>
       <h1>The New York Times Best Seller Explorer</h1>
       {bestSellers.results.map((e) => 
-        <Link href={`/list/${e.list_name_encoded}`}>
+        <Link key={e.display_name} href={`/list/${e.list_name_encoded}`}>
           <h2>{e.display_name}→</h2>
         </Link>
       )}
